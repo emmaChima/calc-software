@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap.css">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+      <footer>basic calculator created with html css and javascrip</footer>
+      <!-- calculator -->
+      <div class="frame">
+        <div id="">
+          <input type="text" value="" id="screen" readonly>
+        </div>
+
+        <div id="button-hold">
+          <button id="de" onclick="cleardata()('x')">DE</button>
+          <button class="bi bi-x" onclick="cleardatas()('x')"></button>
+          <button onclick="updateinput('.')">.</button>
+          <button onclick="updateinput('/')">/</button>
+          <button onclick="updateinput(7)">7</button>
+          <button onclick="updateinput(8)">8</button>
+          <button onclick="updateinput(9)">9</button>
+          <button onclick="updateinput('*')">*</button>
+          <button onclick="updateinput(4)">4</button>
+          <button onclick="updateinput(5)">5</button>
+          <button onclick="updateinput(6)">6</button>
+          <button onclick="updateinput('-')">-</button>
+          <button onclick="updateinput(1)">1</button>
+          <button onclick="updateinput(2)">2</button>
+          <button onclick="updateinput(3)">3</button>
+          <button onclick="updateinput('+')">+</button>
+          <button onclick="updateinput(0)">0</button>
+          <button onclick="updateinput('00')">00</button>
+          <button id="equal-to" onclick="arithmetic()">=</button>
+        </div>
+      </div>
+      
+    </body>
+    <script src="JS/java.js"></script>
+</html>

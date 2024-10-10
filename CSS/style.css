@@ -1,0 +1,66 @@
+
+body{
+    background-color: rosybrown;
+    min-height: 100vh;
+    background-image: url('/Images/garden.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.frame{
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 23%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.frame #screen{
+    height: 25px; width: 100%;
+    border: none; outline: none;
+    box-shadow: 0px 1px 5px lightgrey;
+    font-size: 8px;
+    text-align: right;
+
+}
+
+#button-hold{
+    margin-top: 5px;
+    padding: 0px;
+}
+button{
+    background-color: white;
+    border: none; outline: none;
+    font-size: 8px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    height: 20px; width: 20px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+button:hover{
+    background-color: green;
+}
+
+button#equal-to{
+    width: 44.8px;
+    background-color: rgba(0, 0, 255, 0.486);
+    color: white;  font-weight: bold;
+}
+
+button#de{
+    background-color: rgba(255, 0, 0, 0.473);
+    color: white;
+}
+
+footer{
+    color: yellow;    
+    font-weight: bold;
+    width: 30%;
+    line-height: 8px;
+    font-size: 8px;
+    margin: 10px auto;
+}
