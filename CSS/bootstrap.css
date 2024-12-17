@@ -12082,7 +12082,8 @@ h4{
   width: fit-content;
 }
 .container{
-  
+  height: 100vh;
+  padding: 0px;
 }
 .row{
   width: 100%;
@@ -12092,7 +12093,7 @@ h4{
   margin: 0px;
 }
 div.frame{
-  height: 80%;
+  height: 520px !important;
   width: 320px;
   background-color: rgba(0,0,0,0.3);
   border: 2px solid white;
@@ -12101,7 +12102,7 @@ div.frame{
   position: relative;
 }
 .standard-box{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -12132,11 +12133,11 @@ div.frame{
 }
 ul#side-bar{
   position: absolute;
-  top:  65px;
+  top:  70px;
   left: 0px;
   z-index: 900;
   padding: 0;
-  width: 0%;  height: 40vh;
+  width: 0%;  height: 245px;
   overflow: hidden;
   list-style: none;
   background-color: red;
