@@ -10,37 +10,55 @@
         <link rel="stylesheet" href="CSS/style.css">
     </head>
 
-    <body>
-      <footer>basic calculator created with html css and javascrip</footer>
-      <!-- calculator -->
-      <div class="frame">
-        <div id="">
-          <input type="text" value="" id="screen" readonly>
-        </div>
-
-        <div id="button-hold">
-          <button id="de" onclick="cleardata()('x')">DE</button>
-          <button class="bi bi-x" onclick="cleardatas()('x')"></button>
-          <button onclick="updateinput('.')">.</button>
-          <button onclick="updateinput('/')">/</button>
-          <button onclick="updateinput(7)">7</button>
-          <button onclick="updateinput(8)">8</button>
-          <button onclick="updateinput(9)">9</button>
-          <button onclick="updateinput('*')">*</button>
-          <button onclick="updateinput(4)">4</button>
-          <button onclick="updateinput(5)">5</button>
-          <button onclick="updateinput(6)">6</button>
-          <button onclick="updateinput('-')">-</button>
-          <button onclick="updateinput(1)">1</button>
-          <button onclick="updateinput(2)">2</button>
-          <button onclick="updateinput(3)">3</button>
-          <button onclick="updateinput('+')">+</button>
-          <button onclick="updateinput(0)">0</button>
-          <button onclick="updateinput('00')">00</button>
-          <button id="equal-to" onclick="arithmetic()">=</button>
+    <body id="able">
+      <h4>basic calculator created with html css and javascript</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 frame">
+            <div class="standard-box" id="standard-box">
+              <i class="bi bi-list" id="bi-list"></i> 
+              <i class="bi bi-x" id="bi-x"></i>
+              <span>Standard</span> 
+              <i class="bi bi-moon-stars-fill" id="moon"></i>
+              <div id="battery"><div id="child"></div></div>
+              <ul id="side-bar">
+                <li id="li-side-bar">Standard</li>
+                <li id="li-side-bar">Scientific</li>
+                <li id="li-side-bar">Graphing</li>
+                <li id="li-side-bar">Programming</li>
+                <li id="li-side-bar">Data Calculation</li>
+              </ul>
+            </div>
+            <div id="screen-box">
+              <input type="text" value="" id="screen" readonly>
+            </div>
+    
+            <div id="button-hold">
+              <button id="de" onclick="cleardata()('x')">DE</button>
+              <button class="" onclick="cleardatas()('x')">x</button>
+              <button onclick="updateinput('.')">.</button>
+              <button onclick="updateinput('/')">/</button>
+              <button onclick="updateinput(7)">7</button>
+              <button onclick="updateinput(8)">8</button>
+              <button onclick="updateinput(9)">9</button>
+              <button onclick="updateinput('*')">*</button>
+              <button onclick="updateinput(4)">4</button>
+              <button onclick="updateinput(5)">5</button>
+              <button onclick="updateinput(6)">6</button>
+              <button onclick="updateinput('-')">-</button>
+              <button onclick="updateinput(1)">1</button>
+              <button onclick="updateinput(2)">2</button>
+              <button onclick="updateinput(3)">3</button>
+              <button onclick="updateinput('+')">+</button>
+              <button onclick="updateinput(0)">0</button>
+              <button onclick="updateinput('00')">00</button>
+              <button id="equal-to" onclick="arithmetic()">=</button>
+            </div>
+          </div>
         </div>
       </div>
-      
+
+      <!-- calculator -->
     </body>
     <script src="JS/java.js"></script>
 </html>

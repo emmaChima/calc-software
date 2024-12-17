@@ -1,4 +1,5 @@
 
+
 function updateinput(x){
     let screenEle = document.getElementById('screen');
     let currentval = screenEle.value;
@@ -66,3 +67,59 @@ function cleardata(){
 };
 
 
+
+
+
+
+
+
+
+
+let screen = document.getElementById('screen')
+let moon = document.getElementById('moon')
+let xEle = document.getElementById('bi-x')
+let listEle = document.getElementById('bi-list')
+listEle.addEventListener('click', ()=>{
+    listEle.style.transform = 'rotate(90deg)'
+    listEle.style.visibility = 'hidden'
+    xEle.style.visibility = 'visible'
+    document.getElementById('side-bar').style.padding = '30px'
+    document.getElementById('side-bar').style.width = '70%'
+})
+xEle.addEventListener('click', ()=>{
+    xEle.style.transform = 'rotate(-90deg)'
+    xEle.style.visibility = 'hidden' 
+    listEle.style.transform = 'rotate(180deg)'
+    listEle.style.visibility = 'visible' 
+    document.getElementById('side-bar').style.padding = '0px'
+    document.getElementById('side-bar').style.width = '0%'
+})
+moon.addEventListener('click', ()=>{
+    moon.style.color = 'red'
+    screen.style.background = 'black'
+    screen.style.color = 'white'
+})
+
+moon.addEventListener('dblclick', ()=>{
+    document.getElementById('able').style.background = 'url(/Images/bookstore.jpg)';
+
+})
+
+
+
+
+
+
+
+
+    // function addition(){
+    //     let number = '512232';
+    //     currentnumber =  parseInt((number[0]))
+    //     let result;
+    //     for(i=1; i < number.length; i++){
+    //         currentnumber += parseInt((number [i]))
+    //         result = currentnumber
+    //     }
+    //     console.log(result)
+    // }
+    // addition()
